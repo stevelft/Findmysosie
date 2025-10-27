@@ -1,12 +1,20 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>FindMySosie</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>Bienvenue sur FindMySosie 👋</h1>
-  <p>Ton site est en ligne !</p>
+  <h1>FindMySosie 👯‍♂️</h1>
+  <p>Prends une photo ou choisis-en une pour trouver ton sosie célèbre.</p>
+
+  <input type="file" id="photoInput" accept="image/*" />
+  <button id="analyzeBtn">Trouver mon sosie</button>
+
+  <div id="result"></div>
+
+  <script src="script.js"></script>
 </body>
 </html>
