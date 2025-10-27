@@ -1,13 +1,3 @@
-{
-  "version": 2,
-  "public": true,
-  "builds": [
-    {
-      "src": "pages/index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "/pages/index.html" }
-  ]
-}
+# FindMySosie — par Steve
+
+Application pour trouver ton sosie parmi des visages synthétiques.
