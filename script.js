@@ -1,16 +1,18 @@
-document.getElementById("analyzeBtn").addEventListener("click", () => {
-  const input = document.getElementById("photoInput");
-  const result = document.getElementById("result");
+// Quand l'utilisateur clique sur le bouton
+document.getElementById('analyzeBtn').addEventListener('click', function() {
+  const input = document.getElementById('photoInput');
+  const resultDiv = document.getElementById('result');
 
-  if (!input.files.length) {
-    result.innerHTML = "<p style='color:red;'>⚠️ Sélectionne une photo d'abord !</p>";
+  if (!input.files || input.files.length === 0) {
+    resultDiv.innerHTML = "📸 Choisis une photo d'abord !";
     return;
   }
 
-  // Simule la recherche de sosie
-  result.innerHTML = "<p>🔍 Recherche de ton sosie en cours...</p>";
+  // Ici, on simule le traitement pour le moment
+  resultDiv.innerHTML = "🔍 Analyse de ta photo en cours...";
 
+  // Simulation d’un petit délai de recherche
   setTimeout(() => {
-    result.innerHTML = "<h2>😎 Ton sosie est : <em>Personne célèbre aléatoire</em> !</h2>";
+    resultDiv.innerHTML = "😄 Ton sosie ressemble à une star de cinéma ! (version test)";
   }, 2000);
 });
